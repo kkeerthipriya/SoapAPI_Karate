@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/headers/headers.feature</title>
+</head>
+<body>
+<div>
+<div>configure function</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'headers' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def token = response passed</div>
+<div>def time = responseCookies.time.value passed</div>
+<div>match responseCookies contains { time: '#notnull' } passed</div>
+<div>match responseCookies !contains { blah: '#notnull' } passed</div>
+<div>configure headers = read('classpath:headers.js') passed</div>
+<div>path 'headers', token passed</div>
+<div>param url = demoBaseUrl passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+</div>
+</div>
+<div>
+<div>configure json</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'headers' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def token = response passed</div>
+<div>def time = responseCookies.time.value passed</div>
+<div>match responseCookies contains { time: '#notnull' } passed</div>
+<div>match responseCookies !contains { blah: '#notnull' } passed</div>
+<div>configure headers = { Authorization: '#(token + time + demoBaseUrl)' } passed</div>
+<div>path 'headers', token passed</div>
+<div>param url = demoBaseUrl passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+</div>
+</div>
+<div>
+<div>set header</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'headers' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def token = response passed</div>
+<div>def time = responseCookies.time.value passed</div>
+<div>match responseCookies contains { time: '#notnull' } passed</div>
+<div>match responseCookies !contains { blah: '#notnull' } passed</div>
+<div>header Authorization = token + time + demoBaseUrl passed</div>
+<div>path 'headers', token passed</div>
+<div>param url = demoBaseUrl passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+</div>
+</div>
+<div>
+<div>multi-value headers</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'headers' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def token = response passed</div>
+<div>def time = responseCookies.time.value passed</div>
+<div>match responseCookies contains { time: '#notnull' } passed</div>
+<div>match responseCookies !contains { blah: '#notnull' } passed</div>
+<div>header Authorization = 'dummy', token + time + demoBaseUrl passed</div>
+<div>path 'headers', token passed</div>
+<div>param url = demoBaseUrl passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+</div>
+</div>
+<div>
+<div>set headers using json</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'headers' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def token = response passed</div>
+<div>def time = responseCookies.time.value passed</div>
+<div>match responseCookies contains { time: '#notnull' } passed</div>
+<div>match responseCookies !contains { blah: '#notnull' } passed</div>
+<div>headers { Authorization: '#(token + time + demoBaseUrl)' } passed</div>
+<div>path 'headers', token passed</div>
+<div>param url = demoBaseUrl passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+</div>
+</div>
+<div>
+<div>set multi-value headers using json</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'headers' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def token = response passed</div>
+<div>def time = responseCookies.time.value passed</div>
+<div>match responseCookies contains { time: '#notnull' } passed</div>
+<div>match responseCookies !contains { blah: '#notnull' } passed</div>
+<div>headers { Authorization: ['dummy', '#(token + time + demoBaseUrl)'] } passed</div>
+<div>path 'headers', token passed</div>
+<div>param url = demoBaseUrl passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+</div>
+</div>
+<div>
+<div>set multi-value headers using function call</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'headers' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def token = response passed</div>
+<div>def time = responseCookies.time.value passed</div>
+<div>match responseCookies contains { time: '#notnull' } passed</div>
+<div>match responseCookies !contains { blah: '#notnull' } passed</div>
+<div>def fun = function(arg){ return [arg.first, arg.second] } passed</div>
+<div>header Authorization = call fun { first: 'dummy', second: '#(token + time + demoBaseUrl)' } passed</div>
+<div>path 'headers', token passed</div>
+<div>param url = demoBaseUrl passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+</div>
+</div>
+</body>
+</html>

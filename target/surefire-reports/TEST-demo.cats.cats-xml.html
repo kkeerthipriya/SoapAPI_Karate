@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/cats/cats-xml.feature</title>
+</head>
+<body>
+<div>
+<div>create and retrieve a cat</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>configure logPrettyRequest = true passed</div>
+<div>configure logPrettyResponse = true passed</div>
+<div>configure headers = { Accept: 'application/xml' } passed</div>
+<div>path 'cats' passed</div>
+<div>request &lt;cat&gt;&lt;name&gt;Billie&lt;/name&gt;&lt;/cat&gt; passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>match response == &lt;cat&gt;&lt;id&gt;#notnull&lt;/id&gt;&lt;name&gt;Billie&lt;/name&gt;&lt;/cat&gt; passed</div>
+<div>def id = /cat/id passed</div>
+<div>path 'cats', id passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == &lt;cat&gt;&lt;id&gt;#(id)&lt;/id&gt;&lt;name&gt;Billie&lt;/name&gt;&lt;/cat&gt; passed</div>
+</div>
+</div>
+</body>
+</html>

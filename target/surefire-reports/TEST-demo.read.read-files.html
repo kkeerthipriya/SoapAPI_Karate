@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/read/read-files.feature</title>
+</head>
+<body>
+<div>
+<div>using json from a file</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'search' passed</div>
+<div>table employees passed</div>
+<div>request ({ employees: employees }) passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>match $ == read('sample.json') failed</div>
+</div>
+</div>
+<div>
+<div>using xml from a file</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'search' passed</div>
+<div>set payload /employees passed</div>
+<div>request payload passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>match / == read('sample.xml') failed</div>
+</div>
+</div>
+</body>
+</html>

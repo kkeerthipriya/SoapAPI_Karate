@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/calldynamic/call-dynamic-json.feature</title>
+</head>
+<body>
+<div>
+<div>create kittens and validate</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def creator = read('../callarray/kitten-create.feature') failed</div>
+<div>def kittensFn = skipped</div>
+<div>def kittens = call kittensFn 5 skipped</div>
+<div>def result1 = call creator kittens skipped</div>
+<div>def created = $result1[*].response skipped</div>
+<div>assert created.length == 5 skipped</div>
+<div>match each created == { id: '#number', name: '#regex Kit[0-4]' } skipped</div>
+<div>match created[*].name contains [ 'Kit0', 'Kit1', 'Kit2', 'Kit3', 'Kit4' ] skipped</div>
+<div>def result2 = call read('get-cat.feature') created skipped</div>
+<div>match result2[*].response contains created skipped</div>
+</div>
+</div>
+</body>
+</html>

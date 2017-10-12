@@ -1,0 +1,1944 @@
+22:53:41.470 [main] INFO  c.i.rt.execution.junit.JUnitStarter - Starting JUnitStarter on KiranParepalli with PID 5428 (started by Kiran Parepalli in C:\Users\Kiran Parepalli\IdeaProjects\Karate\karate-demo)
+22:53:41.499 [main] INFO  c.i.rt.execution.junit.JUnitStarter - No active profile set, falling back to default profiles: default
+22:53:42.211 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15d49048: startup date [Thu Oct 12 22:53:42 AEDT 2017]; root of context hierarchy
+22:53:45.171 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+22:53:56.212 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+22:53:56.293 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+22:53:56.303 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+22:53:57.013 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:53:57.014 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 14845 ms
+22:53:57.675 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:53:57.676 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:53:57.677 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:53:57.677 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:53:57.679 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+22:53:57.680 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+22:53:58.922 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+22:53:59.950 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/Kiran%20Parepalli/IdeaProjects/Karate/karate-demo/target/classes/schema.sql]
+22:53:59.976 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/Kiran%20Parepalli/IdeaProjects/Karate/karate-demo/target/classes/schema.sql] in 25 ms.
+22:54:00.214 [main] INFO  c.i.k.d.controller.UploadController - created directory: target\demofiles
+22:54:00.622 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15d49048: startup date [Thu Oct 12 22:53:42 AEDT 2017]; root of context hierarchy
+22:54:00.930 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cats/{id:.+}],methods=[GET]}" onto public com.intuit.karate.demo.domain.Cat com.intuit.karate.demo.controller.CatsController.get(int)
+22:54:00.933 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cats/{id:.+}],methods=[DELETE]}" onto public void com.intuit.karate.demo.controller.CatsController.delete(int)
+22:54:00.934 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cats],methods=[POST]}" onto public com.intuit.karate.demo.domain.Cat com.intuit.karate.demo.controller.CatsController.create(com.intuit.karate.demo.domain.Cat)
+22:54:00.936 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cats],methods=[GET]}" onto public java.util.Collection<com.intuit.karate.demo.domain.Cat> com.intuit.karate.demo.controller.CatsController.list()
+22:54:00.937 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cats],methods=[DELETE]}" onto public void com.intuit.karate.demo.controller.CatsController.deleteWithBody(com.intuit.karate.demo.domain.Cat)
+22:54:00.941 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cats/{id:.+}/kittens],methods=[GET]}" onto public java.util.Collection<com.intuit.karate.demo.domain.Cat> com.intuit.karate.demo.controller.CatsController.getKittens(int)
+22:54:00.946 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dogs/{id:.+}],methods=[GET]}" onto public com.intuit.karate.demo.domain.Dog com.intuit.karate.demo.controller.DogsController.get(int)
+22:54:00.947 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dogs],methods=[POST]}" onto public com.intuit.karate.demo.domain.Dog com.intuit.karate.demo.controller.DogsController.create(com.intuit.karate.demo.domain.Dog)
+22:54:00.948 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dogs],methods=[GET]}" onto public java.util.Collection<com.intuit.karate.demo.domain.Dog> com.intuit.karate.demo.controller.DogsController.list()
+22:54:00.952 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encoding/index.php?/api/v2/{token:.+}]}" onto public java.lang.String com.intuit.karate.demo.controller.EncodingController.echoPathWithQuestion(java.lang.String)
+22:54:00.953 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/encoding/{token:.+}]}" onto public java.lang.String com.intuit.karate.demo.controller.EncodingController.echoPath(java.lang.String)
+22:54:00.954 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/greeting]}" onto public com.intuit.karate.demo.domain.Greeting com.intuit.karate.demo.controller.GreetingController.greeting(java.lang.String)
+22:54:00.958 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/headers/{token:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.intuit.karate.demo.controller.HeadersController.validateToken(java.lang.String,java.lang.String[],java.lang.String,java.lang.String)
+22:54:00.959 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/headers],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.intuit.karate.demo.controller.HeadersController.getToken(javax.servlet.http.HttpServletResponse)
+22:54:00.961 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redirect],methods=[GET]}" onto public void com.intuit.karate.demo.controller.RedirectController.from(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+22:54:00.971 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String[]> com.intuit.karate.demo.controller.SearchController.search(javax.servlet.http.HttpServletRequest)
+22:54:00.972 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.intuit.karate.demo.controller.SearchController.echo(java.lang.String)
+22:54:00.972 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/search/headers],methods=[GET || POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.intuit.karate.demo.controller.SearchController.echoHeaders(javax.servlet.http.HttpServletRequest)
+22:54:00.976 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signin],methods=[POST]}" onto public java.lang.String com.intuit.karate.demo.controller.SignInController.signInPost(com.intuit.karate.demo.domain.SignIn)
+22:54:00.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signin],methods=[GET]}" onto public java.lang.String com.intuit.karate.demo.controller.SignInController.signInGet(java.lang.String,java.lang.String)
+22:54:00.978 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/signin/token],methods=[GET]}" onto public java.lang.String com.intuit.karate.demo.controller.SignInController.getCsrfToken(javax.servlet.http.HttpServletRequest)
+22:54:00.983 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/files],methods=[POST]}" onto public com.intuit.karate.demo.domain.FileInfo com.intuit.karate.demo.controller.UploadController.upload(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.Exception
+22:54:00.984 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/files/mixed],methods=[POST]}" onto public com.intuit.karate.demo.domain.FileInfo com.intuit.karate.demo.controller.UploadController.uploadMixed(java.lang.String,org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+22:54:00.985 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/files/{id:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.intuit.karate.demo.controller.UploadController.download(java.lang.String) throws java.lang.Exception
+22:54:00.991 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:54:00.993 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:54:01.130 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:54:01.131 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:54:01.359 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:54:03.004 [main] INFO  o.s.b.a.s.AuthenticationManagerConfiguration - 
+
+Using default security password: 5d837385-ff7f-479f-9e96-4481ecb12f87
+
+22:54:03.259 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+22:54:03.489 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51c959a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@261ea657, org.springframework.security.web.header.HeaderWriterFilter@4047d2d9, org.springframework.security.web.csrf.CsrfFilter@5b3a7ef5, org.springframework.security.web.authentication.logout.LogoutFilter@1229a2b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@658255aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22a736d7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fc3c165, org.springframework.security.web.session.SessionManagementFilter@7add323c, org.springframework.security.web.access.ExceptionTranslationFilter@587a1cfb]
+22:54:03.588 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79b84841, org.springframework.security.web.context.SecurityContextPersistenceFilter@2643d762, org.springframework.security.web.header.HeaderWriterFilter@252dc8c4, org.springframework.security.web.authentication.logout.LogoutFilter@d109c4f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@70228253, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6403e24c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f236de0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d41ba0f, org.springframework.security.web.session.SessionManagementFilter@43045f9f, org.springframework.security.web.access.ExceptionTranslationFilter@26dc9bd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a2bcd56]
+22:54:04.309 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:54:04.415 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+22:54:04.485 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+22:54:04.552 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+22:54:04.686 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 51641 (http)
+22:54:04.688 [main] INFO  c.i.k.d.c.ServerStartedInitializingBean - after runtime init, local server port: 51641
+22:54:04.695 [main] INFO  c.i.k.d.c.ServerStartedInitializingBean - server started with args: [--server.port=0]
+22:54:04.699 [main] INFO  c.i.rt.execution.junit.JUnitStarter - Started JUnitStarter in 25.762 seconds (JVM running for 33.689)
+22:54:04.701 [main] INFO  test.ServerStart - started server on port: 51641
+22:54:12.015 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/cats
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Bob"}
+
+22:54:12.307 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+22:54:12.308 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+22:54:12.379 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 71 ms
+22:54:12.861 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:12 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":1,"name":"Bob"}
+
+22:54:12.864 [main] DEBUG com.intuit.karate - response time in milliseconds: 2342
+22:54:12.908 [main] DEBUG com.intuit.karate - 
+2 > POST http://127.0.0.1:51641/cats
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 15
+2 > Content-Type: application/json
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Wild"}
+
+22:54:12.953 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:12 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"id":2,"name":"Wild"}
+
+22:54:12.954 [main] DEBUG com.intuit.karate - response time in milliseconds: 48
+22:54:15.874 [main] DEBUG com.intuit.karate - request:
+<cat>
+  <name>Billie</name>
+</cat>
+
+22:54:15.878 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/cats
+1 > Accept: application/xml
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 30
+1 > Content-Type: application/xml
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<cat><name>Billie</name></cat>
+
+22:54:17.630 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/xml
+1 < Date: Thu, 12 Oct 2017 11:54:17 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cat><id>3</id><name>Billie</name></cat>
+
+22:54:17.630 [main] DEBUG com.intuit.karate - response time in milliseconds: 1755
+22:54:17.653 [main] DEBUG com.intuit.karate - response:
+<cat>
+  <id>3</id>
+  <name>Billie</name>
+</cat>
+
+22:54:17.709 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/cats/3
+2 > Accept: application/xml
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:17.790 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/xml
+2 < Date: Thu, 12 Oct 2017 11:54:17 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cat><id>3</id><name>Billie</name></cat>
+
+22:54:17.791 [main] DEBUG com.intuit.karate - response time in milliseconds: 83
+22:54:17.796 [main] DEBUG com.intuit.karate - response:
+<cat>
+  <id>3</id>
+  <name>Billie</name>
+</cat>
+
+22:54:18.121 [main] DEBUG com.intuit.karate - request:
+{
+  "name": "Billie"
+}
+
+22:54:18.124 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/cats
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 17
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Billie"}
+
+22:54:18.146 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:17 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":4,"name":"Billie"}
+
+22:54:18.147 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+22:54:18.148 [main] DEBUG com.intuit.karate - response:
+{
+  "id": 4,
+  "name": "Billie"
+}
+
+22:54:18.176 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/cats/4
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:18.200 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:17 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"id":4,"name":"Billie"}
+
+22:54:18.200 [main] DEBUG com.intuit.karate - response time in milliseconds: 27
+22:54:18.201 [main] DEBUG com.intuit.karate - response:
+{
+  "id": 4,
+  "name": "Billie"
+}
+
+22:54:18.239 [main] DEBUG com.intuit.karate - 
+3 > GET http://127.0.0.1:51641/cats
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: 127.0.0.1:51641
+3 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:18.355 [main] DEBUG com.intuit.karate - 
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 12 Oct 2017 11:54:17 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[{"id":1,"name":"Bob"},{"id":2,"name":"Wild"},{"id":3,"name":"Billie"},{"id":4,"name":"Billie"}]
+
+22:54:18.359 [main] DEBUG com.intuit.karate - response time in milliseconds: 122
+22:54:18.361 [main] DEBUG com.intuit.karate - response:
+[
+  {
+    "id": 1,
+    "name": "Bob"
+  },
+  {
+    "id": 2,
+    "name": "Wild"
+  },
+  {
+    "id": 3,
+    "name": "Billie"
+  },
+  {
+    "id": 4,
+    "name": "Billie"
+  }
+]
+
+22:54:18.423 [main] DEBUG com.intuit.karate - 
+4 > GET http://127.0.0.1:51641/cats/4
+4 > Accept: application/xml
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: 127.0.0.1:51641
+4 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:18.453 [main] DEBUG com.intuit.karate - 
+4 < 200
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Content-Type: application/xml
+4 < Date: Thu, 12 Oct 2017 11:54:17 GMT
+4 < Expires: 0
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cat><id>4</id><name>Billie</name></cat>
+
+22:54:18.453 [main] DEBUG com.intuit.karate - response time in milliseconds: 35
+22:54:18.457 [main] DEBUG com.intuit.karate - response:
+<cat>
+  <id>4</id>
+  <name>Billie</name>
+</cat>
+
+22:54:18.917 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/cats
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 14
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Bob"}
+
+22:54:18.956 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:18 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":5,"name":"Bob"}
+
+22:54:18.957 [main] DEBUG com.intuit.karate - response time in milliseconds: 42
+22:54:18.972 [main] DEBUG com.intuit.karate - 
+2 > POST http://127.0.0.1:51641/cats
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 15
+2 > Content-Type: application/json
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Wild"}
+
+22:54:19.027 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:18 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"id":6,"name":"Wild"}
+
+22:54:19.027 [main] DEBUG com.intuit.karate - response time in milliseconds: 57
+22:54:19.065 [main] DEBUG com.intuit.karate - 
+3 > POST http://127.0.0.1:51641/cats
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 74
+3 > Content-Type: application/json
+3 > Host: 127.0.0.1:51641
+3 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Billie","kittens":[{"id":5,"name":"Bob"},{"id":6,"name":"Wild"}]}
+
+22:54:19.179 [main] DEBUG com.intuit.karate - 
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 12 Oct 2017 11:54:18 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"id":7,"name":"Billie","kittens":[{"id":5,"name":"Bob"},{"id":6,"name":"Wild"}]}
+
+22:54:19.179 [main] DEBUG com.intuit.karate - response time in milliseconds: 116
+22:54:19.832 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/cats
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 17
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Billie"}
+
+22:54:19.856 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:18 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":8,"name":"Billie"}
+
+22:54:19.856 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+22:54:19.871 [main] DEBUG com.intuit.karate - 
+2 > DELETE http://127.0.0.1:51641/cats/8
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:19.890 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:18 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:19.891 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+22:54:20.078 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/cats
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 17
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Billie"}
+
+22:54:20.093 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:20 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":9,"name":"Billie"}
+
+22:54:20.093 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+22:54:20.114 [main] DEBUG com.intuit.karate - 
+2 > DELETE http://127.0.0.1:51641/cats
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 24
+2 > Content-Type: application/json
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"id":9,"name":"Billie"}
+
+22:54:20.131 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:20 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:20.132 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+22:54:20.406 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/dogs
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 17
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Scooby"}
+
+22:54:20.801 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:20 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":1,"name":"Scooby"}
+
+22:54:20.802 [main] DEBUG com.intuit.karate - response time in milliseconds: 398
+22:54:20.828 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/dogs/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:21.188 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:21 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"id":1,"name":"Scooby"}
+
+22:54:21.188 [main] DEBUG com.intuit.karate - response time in milliseconds: 362
+22:54:21.220 [main] DEBUG com.intuit.karate - 
+3 > GET http://127.0.0.1:51641/dogs
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: 127.0.0.1:51641
+3 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:21.239 [main] DEBUG com.intuit.karate - 
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 12 Oct 2017 11:54:21 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[{"id":1,"name":"Scooby"}]
+
+22:54:21.240 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+22:54:21.321 [main] INFO  o.s.j.d.DriverManagerDataSource - Loaded JDBC driver: org.h2.Driver
+22:54:21.323 [main] INFO  com.intuit.karate.demo.util.DbUtils - init jdbc template: jdbc:h2:mem:testdb
+22:54:23.210 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/encoding/�Ill~Formed@RequiredString!
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:23.486 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 29
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:23 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+�Ill~Formed@RequiredString!
+
+22:54:23.487 [main] DEBUG com.intuit.karate - response time in milliseconds: 1491
+22:54:24.113 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/encoding/%EF%BF%BDIll~Formed@RequiredString!
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:24.143 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 29
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:23 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+�Ill~Formed@RequiredString!
+
+22:54:24.145 [main] DEBUG com.intuit.karate - response time in milliseconds: 34
+22:54:24.265 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/encoding/index.php%3F/api/v2/hello
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:24.294 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 5
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:23 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+hello
+
+22:54:24.294 [main] DEBUG com.intuit.karate - response time in milliseconds: 31
+22:54:24.490 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/greeting
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:24.534 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:24 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":1,"content":"Hello World!"}
+
+22:54:24.534 [main] DEBUG com.intuit.karate - response time in milliseconds: 46
+22:54:24.649 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/greeting?name=Billie
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:24.663 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:24 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":2,"content":"Hello Billie!"}
+
+22:54:24.664 [main] DEBUG com.intuit.karate - response time in milliseconds: 18
+22:54:26.837 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:26.918 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:26 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809266865
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+b2f235fa-64e6-4afd-8c23-ef1d3e7fb91a
+
+22:54:26.919 [main] DEBUG com.intuit.karate - response time in milliseconds: 82
+22:54:27.101 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/b2f235fa-64e6-4afd-8c23-ef1d3e7fb91a?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: b2f235fa-64e6-4afd-8c23-ef1d3e7fb91a1507809266865http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809266865
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+2 > request_id: 3b0f90da-cac3-4708-9914-b2e70e9abced
+
+22:54:27.352 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:26 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:27.353 [main] DEBUG com.intuit.karate - response time in milliseconds: 255
+22:54:27.453 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:27.472 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:26 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809267463
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+97d5b593-ef3c-4770-b3c5-13d55d217ea1
+
+22:54:27.472 [main] DEBUG com.intuit.karate - response time in milliseconds: 24
+22:54:27.543 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/97d5b593-ef3c-4770-b3c5-13d55d217ea1?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: 97d5b593-ef3c-4770-b3c5-13d55d217ea11507809267463http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809267463
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+2 > request_id: 6ac30c9f-496c-42df-99ce-681ee95ea125
+
+22:54:27.558 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:26 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:27.559 [main] DEBUG com.intuit.karate - response time in milliseconds: 21
+22:54:27.670 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:27.685 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:26 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809267679
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+01538f89-1120-4722-bc9a-2ca0a7d1bb3f
+
+22:54:27.691 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+22:54:27.717 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/01538f89-1120-4722-bc9a-2ca0a7d1bb3f?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: 01538f89-1120-4722-bc9a-2ca0a7d1bb3f1507809267679http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809267679
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:27.777 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:26 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:27.778 [main] DEBUG com.intuit.karate - response time in milliseconds: 63
+22:54:27.897 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:27.942 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:27 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809267921
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+6e92cd96-0295-477e-b0dc-cf8fa359e8c1
+
+22:54:27.943 [main] DEBUG com.intuit.karate - response time in milliseconds: 48
+22:54:27.972 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/6e92cd96-0295-477e-b0dc-cf8fa359e8c1?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: 6e92cd96-0295-477e-b0dc-cf8fa359e8c11507809267921http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809267921
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:27.994 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:27 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:27.995 [main] DEBUG com.intuit.karate - response time in milliseconds: 24
+22:54:28.208 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:28.509 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:27 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809268499
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+1c0d3df1-49de-4281-a55d-d373843b8c41
+
+22:54:28.511 [main] DEBUG com.intuit.karate - response time in milliseconds: 304
+22:54:28.546 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/1c0d3df1-49de-4281-a55d-d373843b8c41?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: 1c0d3df1-49de-4281-a55d-d373843b8c411507809268499http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809268499
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:28.569 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:27 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:28.569 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+22:54:28.798 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:29.026 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:29 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809269023
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+9d449425-f375-40d2-a328-1c30626589b0
+
+22:54:29.026 [main] DEBUG com.intuit.karate - response time in milliseconds: 229
+22:54:29.079 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/9d449425-f375-40d2-a328-1c30626589b0?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: 9d449425-f375-40d2-a328-1c30626589b01507809269023http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809269023
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+2 > request_id: ed6172d5-a8cf-421a-9343-40ede9504324
+
+22:54:29.143 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:29 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:29.143 [main] DEBUG com.intuit.karate - response time in milliseconds: 66
+22:54:29.418 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:29.433 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:29 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809269429
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+fa1171fd-f29f-4fd3-a1ee-3f5f0aed26c6
+
+22:54:29.433 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+22:54:29.465 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/fa1171fd-f29f-4fd3-a1ee-3f5f0aed26c6?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: fa1171fd-f29f-4fd3-a1ee-3f5f0aed26c61507809269429http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809269429
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:29.483 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:29 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:29.483 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+22:54:29.572 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:29.593 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:29 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809269584
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+65e2c440-2c9d-4a76-8a19-f19817dbc3ea
+
+22:54:29.594 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+22:54:29.630 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/65e2c440-2c9d-4a76-8a19-f19817dbc3ea?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: 65e2c440-2c9d-4a76-8a19-f19817dbc3ea1507809269584http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809269584
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:29.648 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:29 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:29.648 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+22:54:30.617 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:30.635 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809270629
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+2262c972-0590-4662-8976-f09c91238082
+
+22:54:30.635 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+22:54:30.685 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/2262c972-0590-4662-8976-f09c91238082?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: [dummy, 2262c972-0590-4662-8976-f09c912380821507809270629http://127.0.0.1:51641]
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809270629
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:30.702 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:30.703 [main] DEBUG com.intuit.karate - response time in milliseconds: 23
+22:54:30.796 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:30.812 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809270809
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+bad85ba5-09e8-4ce2-9fcd-98744554915f
+
+22:54:30.813 [main] DEBUG com.intuit.karate - response time in milliseconds: 19
+22:54:30.847 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/bad85ba5-09e8-4ce2-9fcd-98744554915f?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: bad85ba5-09e8-4ce2-9fcd-98744554915f1507809270809http://127.0.0.1:51641
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809270809
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:30.869 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:30.870 [main] DEBUG com.intuit.karate - response time in milliseconds: 26
+22:54:30.997 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:31.012 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809271007
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+d5e1321e-be4f-4092-a385-bca5b76b2cec
+
+22:54:31.014 [main] DEBUG com.intuit.karate - response time in milliseconds: 19
+22:54:31.091 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/d5e1321e-be4f-4092-a385-bca5b76b2cec?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: [dummy, d5e1321e-be4f-4092-a385-bca5b76b2cec1507809271007http://127.0.0.1:51641]
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809271007
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:31.110 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:31.110 [main] DEBUG com.intuit.karate - response time in milliseconds: 21
+22:54:31.206 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:31.223 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: time=1507809271213
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+25a8eb3a-a116-4935-bebe-a446f60e375a
+
+22:54:31.224 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+22:54:31.326 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/headers/25a8eb3a-a116-4935-bebe-a446f60e375a?url=http%3A%2F%2F127.0.0.1%3A51641
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: [dummy, 25a8eb3a-a116-4935-bebe-a446f60e375a1507809271213http://127.0.0.1:51641]
+2 > Connection: Keep-Alive
+2 > Cookie: time=1507809271213
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:31.343 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 0
+2 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+
+22:54:31.343 [main] DEBUG com.intuit.karate - response time in milliseconds: 19
+22:54:31.504 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/cats
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 17
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"name":"Sillie"}
+
+22:54:31.534 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:30 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"id":10,"name":"Sillie"}
+
+22:54:31.535 [main] DEBUG com.intuit.karate - response time in milliseconds: 33
+22:54:31.548 [main] DEBUG com.intuit.karate.demo.util.JavaDemo - java got map: {id=10, name=Sillie}
+22:54:31.677 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/cats
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:31.696 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:31 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+[{"id":1,"name":"Bob"},{"id":2,"name":"Wild"},{"id":3,"name":"Billie"},{"id":4,"name":"Billie"},{"id":5,"name":"Bob"},{"id":6,"name":"Wild"},{"id":7,"name":"Billie","kittens":[{"id":5,"name":"Bob"},{"id":6,"name":"Wild"}]},{"id":10,"name":"Sillie"}]
+
+22:54:31.697 [main] DEBUG com.intuit.karate - response time in milliseconds: 20
+22:54:31.710 [main] DEBUG com.intuit.karate.demo.util.JavaDemo - java got list: [{"id":1,"name":"Bob"},{"id":2,"name":"Wild"},{"id":3,"name":"Billie"},{"id":4,"name":"Billie"},{"id":5,"name":"Bob"},{"id":6,"name":"Wild"},{"id":7,"name":"Billie","kittens":[{"id":5,"name":"Bob"},{"id":6,"name":"Wild"}]},{"id":10,"name":"Sillie"}]
+22:54:32.617 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/search
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 93
+1 > Content-Type: application/json
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"employees":[{"firstName":"John","lastName":"Smith"},{"firstName":"Jane","lastName":"Doe"}]}
+
+22:54:32.814 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 93
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"employees":[{"firstName":"John","lastName":"Smith"},{"firstName":"Jane","lastName":"Doe"}]}
+
+22:54:32.815 [main] DEBUG com.intuit.karate - response time in milliseconds: 200
+22:54:33.020 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/search
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 169
+1 > Content-Type: application/xml
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<employees><employee><firstName>John</firstName><lastName>Smith</lastName></employee><employee><firstName>Jane</firstName><lastName>Doe</lastName></employee></employees>
+
+22:54:33.042 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 169
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<employees><employee><firstName>John</firstName><lastName>Smith</lastName></employee><employee><firstName>Jane</firstName><lastName>Doe</lastName></employee></employees>
+
+22:54:33.042 [main] DEBUG com.intuit.karate - response time in milliseconds: 25
+22:54:33.188 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/redirect
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:33.230 [main] DEBUG com.intuit.karate - 
+1 < 302
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 12 Oct 2017 11:54:32 GMT
+1 < Expires: 0
+1 < Location: http://127.0.0.1:51641/search
+1 < Pragma: no-cache
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+22:54:33.231 [main] DEBUG com.intuit.karate - response time in milliseconds: 50
+22:54:33.326 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/search?foo=bar
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:33.457 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:32 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"foo":["bar"]}
+
+22:54:33.458 [main] DEBUG com.intuit.karate - response time in milliseconds: 134
+22:54:34.301 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/search/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 13
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+{"foo":"bar"}
+
+22:54:34.402 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:34 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"content-type":["application/json; charset=UTF-8"],"content-length":["13"],"host":["127.0.0.1:51641"],"connection":["Keep-Alive"],"user-agent":["Apache-HttpClient/4.5.3 (Java/1.8.0_60)"],"accept-encoding":["gzip,deflate"]}
+
+22:54:34.402 [main] DEBUG com.intuit.karate - response time in milliseconds: 103
+22:54:34.917 [main] DEBUG com.intuit.karate - 
+1 > POST http://127.0.0.1:51641/search/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 7
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+foo=bar
+
+22:54:34.962 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:34 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"content-type":["application/x-www-form-urlencoded; charset=utf-8"],"content-length":["7"],"host":["127.0.0.1:51641"],"connection":["Keep-Alive"],"user-agent":["Apache-HttpClient/4.5.3 (Java/1.8.0_60)"],"accept-encoding":["gzip,deflate"]}
+
+22:54:34.962 [main] DEBUG com.intuit.karate - response time in milliseconds: 46
+22:54:36.331 [main] INFO  com.intuit.karate - [print] {
+  "name": "foo",
+  "country": "IN",
+  "active": true,
+  "limit": 1
+}
+
+22:54:36.344 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search?name=foo&country=IN&active=true&limit=1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:36.377 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:36 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["foo"],"country":["IN"],"active":["true"],"limit":["1"]}
+
+22:54:36.378 [main] DEBUG com.intuit.karate - response time in milliseconds: 37
+22:54:36.464 [main] INFO  com.intuit.karate - [print] {
+  "name": "bar",
+  "country": null,
+  "active": null,
+  "limit": 5
+}
+
+22:54:36.489 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search?name=bar&limit=5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:36.500 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:36 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["bar"],"limit":["5"]}
+
+22:54:36.500 [main] DEBUG com.intuit.karate - response time in milliseconds: 13
+22:54:36.581 [main] INFO  com.intuit.karate - [print] {
+  "name": "bar",
+  "country": "JP",
+  "active": null,
+  "limit": null
+}
+
+22:54:36.591 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search?name=bar&country=JP
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:36.666 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:36 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["bar"],"country":["JP"]}
+
+22:54:36.667 [main] DEBUG com.intuit.karate - response time in milliseconds: 77
+22:54:36.737 [main] INFO  com.intuit.karate - [print] {
+  "name": null,
+  "country": "US",
+  "active": null,
+  "limit": 3
+}
+
+22:54:36.747 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search?country=US&limit=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:36.762 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:36 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"country":["US"],"limit":["3"]}
+
+22:54:36.763 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+22:54:36.853 [main] INFO  com.intuit.karate - [print] {
+  "name": null,
+  "country": null,
+  "active": false,
+  "limit": null
+}
+
+22:54:36.864 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search?active=false
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:36.881 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:36 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"active":["false"]}
+
+22:54:36.881 [main] DEBUG com.intuit.karate - response time in milliseconds: 19
+22:54:37.163 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search?name=one&country=two
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:37.177 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:36 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":["one"],"country":["two"]}
+
+22:54:37.178 [main] DEBUG com.intuit.karate - response time in milliseconds: 17
+22:54:38.234 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search?foo=bar&foo=baz
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:38.253 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"foo":["bar","baz"]}
+
+22:54:38.253 [main] DEBUG com.intuit.karate - response time in milliseconds: 22
+22:54:38.317 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/search?foo=bar&foo=baz
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:38.487 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"foo":["bar","baz"]}
+
+22:54:38.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 173
+22:54:38.529 [main] DEBUG com.intuit.karate - 
+3 > GET http://127.0.0.1:51641/search?foo=bar%2Cbaz
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: 127.0.0.1:51641
+3 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:38.598 [main] DEBUG com.intuit.karate - 
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+{"foo":["bar,baz"]}
+
+22:54:38.599 [main] DEBUG com.intuit.karate - response time in milliseconds: 72
+22:54:38.617 [main] DEBUG com.intuit.karate - 
+4 > GET http://127.0.0.1:51641/search?foo=bar%2Cbaz
+4 > Accept-Encoding: gzip,deflate
+4 > Connection: Keep-Alive
+4 > Host: 127.0.0.1:51641
+4 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:38.629 [main] DEBUG com.intuit.karate - 
+4 < 200
+4 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 < Content-Type: application/json;charset=UTF-8
+4 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+4 < Expires: 0
+4 < Pragma: no-cache
+4 < Transfer-Encoding: chunked
+4 < X-Content-Type-Options: nosniff
+4 < X-Frame-Options: DENY
+4 < X-XSS-Protection: 1; mode=block
+{"foo":["bar,baz"]}
+
+22:54:38.629 [main] DEBUG com.intuit.karate - response time in milliseconds: 15
+22:54:38.785 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/search/headers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+1 > foo: bar
+
+22:54:38.794 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"foo":["bar"],"host":["127.0.0.1:51641"],"connection":["Keep-Alive"],"user-agent":["Apache-HttpClient/4.5.3 (Java/1.8.0_60)"],"accept-encoding":["gzip,deflate"]}
+
+22:54:38.798 [main] DEBUG com.intuit.karate - response time in milliseconds: 14
+22:54:38.882 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/signin/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:38.945 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=979A8D3ECE1C0ED36AC712690210112F; Path=/; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+34af3815-c6ca-4b63-8b11-7e4d1419386e
+
+22:54:38.946 [main] DEBUG com.intuit.karate - response time in milliseconds: 65
+22:54:39.003 [main] DEBUG com.intuit.karate - 
+2 > POST http://127.0.0.1:51641/signin
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 29
+2 > Content-Type: application/x-www-form-urlencoded
+2 > Cookie: JSESSIONID=979A8D3ECE1C0ED36AC712690210112F
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+2 > X-CSRF-TOKEN: 34af3815-c6ca-4b63-8b11-7e4d1419386e
+username=john&password=secret
+
+22:54:39.037 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 7
+2 < Content-Type: text/plain;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+success
+
+22:54:39.037 [main] DEBUG com.intuit.karate - response time in milliseconds: 44
+22:54:39.181 [main] DEBUG com.intuit.karate - 
+1 > GET http://127.0.0.1:51641/signin/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:51641
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:39.211 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 36
+1 < Content-Type: text/plain;charset=UTF-8
+1 < Date: Thu, 12 Oct 2017 11:54:38 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=261EC0AF687777F3B82061F12C46861F; Path=/; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+f257abf7-a356-4d3c-b420-4d8837aaeab4
+
+22:54:39.211 [main] DEBUG com.intuit.karate - response time in milliseconds: 32
+22:54:39.257 [main] DEBUG com.intuit.karate - 
+2 > GET http://127.0.0.1:51641/signin?username=john&password=secret
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=261EC0AF687777F3B82061F12C46861F
+2 > Host: 127.0.0.1:51641
+2 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+
+22:54:39.289 [main] DEBUG com.intuit.karate - 
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Length: 7
+2 < Content-Type: text/plain;charset=UTF-8
+2 < Date: Thu, 12 Oct 2017 11:54:39 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+success
+
+22:54:39.290 [main] DEBUG com.intuit.karate - response time in milliseconds: 35
+22:54:39.653 [main] INFO  test.ServerStart - stopping spring context
+22:54:39.661 [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15d49048: startup date [Thu Oct 12 22:53:42 AEDT 2017]; root of context hierarchy
+22:54:39.665 [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+22:54:39.666 [Thread-3] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Shutting down embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+23:06:16.240 [main] DEBUG com.intuit.karate - 
+1 > POST http://www.webservicex.com/stockquote.asmx
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 316
+1 > Content-Type: text/xml
+1 > Host: www.webservicex.com
+1 > SOAPAction: http://www.webserviceX.NET/GetQuote
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <GetQuote xmlns="http://www.webserviceX.NET/">
+      <symbol>INTU</symbol>
+    </GetQuote>
+  </soap:Body>
+</soap:Envelope>
+
+23:06:17.577 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Thu, 12 Oct 2017 12:06:09 GMT
+1 < Server: Microsoft-IIS/7.0
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 4.0.30319
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetQuoteResponse xmlns="http://www.webserviceX.NET/"><GetQuoteResult>exception</GetQuoteResult></GetQuoteResponse></soap:Body></soap:Envelope>
+
+23:06:17.579 [main] DEBUG com.intuit.karate - response time in milliseconds: 2444
+23:06:17.610 [main] INFO  com.intuit.karate - [print] exception
+23:10:27.088 [main] DEBUG com.intuit.karate - 
+1 > POST https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 747
+1 > Content-Type: text/xml
+1 > Host: wfxtest.forevernew.com.au
+1 > SOAPAction: GetPOShipmentBySKU
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://schemas.datacontract.org/2004/07/WFXPLMServices" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://tempuri.org/">
+   <SOAP-ENV:Body>
+      <ns3:GetPOShipmentBySKU>
+         <ns3:SKUData>
+            <ns1:AuthenticationToken>04463633-0EA4-4A3F-8248-B698A42D76D8</ns1:AuthenticationToken>
+            <ns1:Barcodes>
+               <ns2:string>2023545502004</ns2:string>
+               <ns2:string>2023593101044</ns2:string>
+               <ns2:string>2023593101082</ns2:string>
+            </ns1:Barcodes>
+         </ns3:SKUData>
+      </ns3:GetPOShipmentBySKU>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+23:10:29.245 [main] DEBUG com.intuit.karate - 
+1 < 500
+1 < Cache-Control: private
+1 < Content-Length: 716
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Thu, 12 Oct 2017 12:10:16 GMT
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode xmlns:a="http://schemas.microsoft.com/ws/2005/05/addressing/none">a:ActionNotSupported</faultcode><faultstring xml:lang="en-AU">The message with Action 'GetPOShipmentBySKU' cannot be processed at the receiver, due to a ContractFilter mismatch at the EndpointDispatcher. This may be because of either a contract mismatch (mismatched Actions between sender and receiver) or a binding/security mismatch between the sender and the receiver.  Check that sender and receiver have the same contract and the same binding (including security requirements, e.g. Message, Transport, None).</faultstring></s:Fault></s:Body></s:Envelope>
+
+23:10:29.247 [main] DEBUG com.intuit.karate - response time in milliseconds: 3109
+23:10:29.271 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 3109, url: https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap, response: <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><s:Fault><faultcode xmlns:a="http://schemas.microsoft.com/ws/2005/05/addressing/none">a:ActionNotSupported</faultcode><faultstring xml:lang="en-AU">The message with Action 'GetPOShipmentBySKU' cannot be processed at the receiver, due to a ContractFilter mismatch at the EndpointDispatcher. This may be because of either a contract mismatch (mismatched Actions between sender and receiver) or a binding/security mismatch between the sender and the receiver.  Check that sender and receiver have the same contract and the same binding (including security requirements, e.g. Message, Transport, None).</faultstring></s:Fault></s:Body></s:Envelope>
+23:15:53.306 [main] DEBUG com.intuit.karate - 
+1 > POST https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 747
+1 > Content-Type: text/xml
+1 > Host: wfxtest.forevernew.com.au
+1 > SOAPAction: http://tempuri.org/IForevernew/GetPOShipmentBySKU
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://schemas.datacontract.org/2004/07/WFXPLMServices" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://tempuri.org/">
+   <SOAP-ENV:Body>
+      <ns3:GetPOShipmentBySKU>
+         <ns3:SKUData>
+            <ns1:AuthenticationToken>04463633-0EA4-4A3F-8248-B698A42D76D8</ns1:AuthenticationToken>
+            <ns1:Barcodes>
+               <ns2:string>2023545502004</ns2:string>
+               <ns2:string>2023593101044</ns2:string>
+               <ns2:string>2023593101082</ns2:string>
+            </ns1:Barcodes>
+         </ns3:SKUData>
+      </ns3:GetPOShipmentBySKU>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+23:15:54.632 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: private
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Thu, 12 Oct 2017 12:15:41 GMT
+1 < Vary: Accept-Encoding
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetPOShipmentBySKUResponse xmlns="http://tempuri.org/"><GetPOShipmentBySKUResult>{"Status" :"200", "Message" :"Ok", "Records":{"Record":[{"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": "98582","Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"}]}}</GetPOShipmentBySKUResult></GetPOShipmentBySKUResponse></s:Body></s:Envelope>
+
+23:15:54.634 [main] DEBUG com.intuit.karate - response time in milliseconds: 2991
+23:15:54.668 [main] INFO  com.intuit.karate - [print] 
+23:26:43.973 [main] DEBUG com.intuit.karate - 
+1 > POST https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 747
+1 > Content-Type: text/xml
+1 > Host: wfxtest.forevernew.com.au
+1 > SOAPAction: http://tempuri.org/IForevernew/GetPOShipmentBySKU
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://schemas.datacontract.org/2004/07/WFXPLMServices" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://tempuri.org/">
+   <SOAP-ENV:Body>
+      <ns3:GetPOShipmentBySKU>
+         <ns3:SKUData>
+            <ns1:AuthenticationToken>04463633-0EA4-4A3F-8248-B698A42D76D8</ns1:AuthenticationToken>
+            <ns1:Barcodes>
+               <ns2:string>2023545502004</ns2:string>
+               <ns2:string>2023593101044</ns2:string>
+               <ns2:string>2023593101082</ns2:string>
+            </ns1:Barcodes>
+         </ns3:SKUData>
+      </ns3:GetPOShipmentBySKU>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+23:26:45.065 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: private
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Thu, 12 Oct 2017 12:26:32 GMT
+1 < Vary: Accept-Encoding
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetPOShipmentBySKUResponse xmlns="http://tempuri.org/"><GetPOShipmentBySKUResult>{"Status" :"200", "Message" :"Ok", "Records":{"Record":[{"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": "98582","Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"}]}}</GetPOShipmentBySKUResult></GetPOShipmentBySKUResponse></s:Body></s:Envelope>
+
+23:26:45.067 [main] DEBUG com.intuit.karate - response time in milliseconds: 2137
+23:26:45.119 [main] ERROR com.intuit.karate - assertion failed: path: /s:Envelope/_/s:Body/GetPOShipmentBySKUResponse/_/GetPOShipmentBySKUResult, actual: '{"Status" :"200", "Message" :"Ok", "Records":{"Record":[{"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": "98582","Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"}]}}', expected: '{"Status" :"200", "Message" :"Ok", "Records":{"Record":[{"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": '#PO_Number',"Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"}]}}', reason: not equal
+23:28:18.547 [main] DEBUG com.intuit.karate - 
+1 > POST https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 747
+1 > Content-Type: text/xml
+1 > Host: wfxtest.forevernew.com.au
+1 > SOAPAction: http://tempuri.org/IForevernew/GetPOShipmentBySKU
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://schemas.datacontract.org/2004/07/WFXPLMServices" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://tempuri.org/">
+   <SOAP-ENV:Body>
+      <ns3:GetPOShipmentBySKU>
+         <ns3:SKUData>
+            <ns1:AuthenticationToken>04463633-0EA4-4A3F-8248-B698A42D76D8</ns1:AuthenticationToken>
+            <ns1:Barcodes>
+               <ns2:string>2023545502004</ns2:string>
+               <ns2:string>2023593101044</ns2:string>
+               <ns2:string>2023593101082</ns2:string>
+            </ns1:Barcodes>
+         </ns3:SKUData>
+      </ns3:GetPOShipmentBySKU>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+23:28:19.521 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: private
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Thu, 12 Oct 2017 12:28:06 GMT
+1 < Vary: Accept-Encoding
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetPOShipmentBySKUResponse xmlns="http://tempuri.org/"><GetPOShipmentBySKUResult>{"Status" :"200", "Message" :"Ok", "Records":{"Record":[{"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": "98582","Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"}]}}</GetPOShipmentBySKUResult></GetPOShipmentBySKUResponse></s:Body></s:Envelope>
+
+23:28:19.523 [main] DEBUG com.intuit.karate - response time in milliseconds: 1897
+23:28:19.874 [main] ERROR com.intuit.karate - assertion failed: path: , actual: [#document: null], expected: {Status=200, Message=Ok, Records={Record=[{"BarcodeNumber":"2023545502004","PurchaseOrders":{"PurchaseOrder":[{"PONumber":"#PO_Number","Quantity":"100","ETADCDate":"26 Nov 2017"}]}},{"BarcodeNumber":"2023593101044"},{"BarcodeNumber":"2023593101082"}]}}, reason: actual value is not map-like
+23:31:48.244 [main] DEBUG com.intuit.karate - 
+1 > POST https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 747
+1 > Content-Type: text/xml
+1 > Host: wfxtest.forevernew.com.au
+1 > SOAPAction: http://tempuri.org/IForevernew/GetPOShipmentBySKU
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://schemas.datacontract.org/2004/07/WFXPLMServices" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://tempuri.org/">
+   <SOAP-ENV:Body>
+      <ns3:GetPOShipmentBySKU>
+         <ns3:SKUData>
+            <ns1:AuthenticationToken>04463633-0EA4-4A3F-8248-B698A42D76D8</ns1:AuthenticationToken>
+            <ns1:Barcodes>
+               <ns2:string>2023545502004</ns2:string>
+               <ns2:string>2023593101044</ns2:string>
+               <ns2:string>2023593101082</ns2:string>
+            </ns1:Barcodes>
+         </ns3:SKUData>
+      </ns3:GetPOShipmentBySKU>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+23:31:49.237 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: private
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Thu, 12 Oct 2017 12:31:35 GMT
+1 < Vary: Accept-Encoding
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetPOShipmentBySKUResponse xmlns="http://tempuri.org/"><GetPOShipmentBySKUResult>{"Status" :"200", "Message" :"Ok", "Records":{"Record":[{"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": "98582","Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"}]}}</GetPOShipmentBySKUResult></GetPOShipmentBySKUResponse></s:Body></s:Envelope>
+
+23:31:49.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 1960
+23:32:55.032 [main] DEBUG com.intuit.karate - 
+1 > POST https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 747
+1 > Content-Type: text/xml
+1 > Host: wfxtest.forevernew.com.au
+1 > SOAPAction: http://tempuri.org/IForevernew/GetPOShipmentBySKU
+1 > User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_60)
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://schemas.datacontract.org/2004/07/WFXPLMServices" xmlns:ns2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ns3="http://tempuri.org/">
+   <SOAP-ENV:Body>
+      <ns3:GetPOShipmentBySKU>
+         <ns3:SKUData>
+            <ns1:AuthenticationToken>04463633-0EA4-4A3F-8248-B698A42D76D8</ns1:AuthenticationToken>
+            <ns1:Barcodes>
+               <ns2:string>2023545502004</ns2:string>
+               <ns2:string>2023593101044</ns2:string>
+               <ns2:string>2023593101082</ns2:string>
+            </ns1:Barcodes>
+         </ns3:SKUData>
+      </ns3:GetPOShipmentBySKU>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+23:32:56.185 [main] DEBUG com.intuit.karate - 
+1 < 200
+1 < Cache-Control: private
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Thu, 12 Oct 2017 12:32:43 GMT
+1 < Vary: Accept-Encoding
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetPOShipmentBySKUResponse xmlns="http://tempuri.org/"><GetPOShipmentBySKUResult>{"Status" :"200", "Message" :"Ok", "Records":{"Record":[{"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": "98582","Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"}]}}</GetPOShipmentBySKUResult></GetPOShipmentBySKUResponse></s:Body></s:Envelope>
+
+23:32:56.187 [main] DEBUG com.intuit.karate - response time in milliseconds: 2206
+23:32:56.411 [main] ERROR com.intuit.karate - assertion failed: path: $[*].Records.Record[0], actual: [], expected: {BarcodeNumber=2023545502004, PurchaseOrders={PurchaseOrder=[{"PONumber":"#PO_Number","Quantity":"100","ETADCDate":"26 Nov 2017"}]}}, reason: actual value is not map-like

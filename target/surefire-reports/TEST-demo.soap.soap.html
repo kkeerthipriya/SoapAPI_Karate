@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/soap/soap.feature</title>
+</head>
+<body>
+<div>
+<div>soap 1.1</div>
+<div>
+<div>url 'https://wfxtest.forevernew.com.au/Services/Forevernew.svc/soap' passed</div>
+<div>request passed</div>
+<div>soap action 'http://tempuri.org/IForevernew/GetPOShipmentBySKU' passed</div>
+<div>status 200 passed</div>
+<div>match response[*].Records.Record[0] == {"BarcodeNumber": "2023545502004", "PurchaseOrders": {"PurchaseOrder": [{"PONumber": '#PO_Number',"Quantity": "100","ETADCDate": "26 Nov 2017"}]}},{"BarcodeNumber": "2023593101044"},{"BarcodeNumber": "2023593101082"} failed</div>
+<div>def last = //GetPOShipmentBySKU skipped</div>
+<div>print last skipped</div>
+<div>print response.PO_Number skipped</div>
+</div>
+</div>
+</body>
+</html>

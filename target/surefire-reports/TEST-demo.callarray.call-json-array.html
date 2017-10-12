@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/callarray/call-json-array.feature</title>
+</head>
+<body>
+<div>
+<div>create parent cat using kittens</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def creator = read('kitten-create.feature') failed</div>
+<div>def kittens = read('kittens.json') skipped</div>
+<div>def result = call creator kittens skipped</div>
+<div>def created = $result[*].response skipped</div>
+<div>path 'cats' skipped</div>
+<div>request { name: 'Billie', kittens: '#(created)' } skipped</div>
+<div>method post skipped</div>
+<div>status 200 skipped</div>
+<div>def billie = response skipped</div>
+<div>path 'cats', billie.id, 'kittens' skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>match each response == { id: '#number', name: '#string' } skipped</div>
+<div>match response[*].name contains ['LOL', 'Nyan'] skipped</div>
+<div>assert response.length == 6 skipped</div>
+</div>
+</div>
+</body>
+</html>

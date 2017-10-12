@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/schema/schema.feature</title>
+</head>
+<body>
+<div>
+<div>using a third-party lib and a schema file</div>
+<div>
+<div>string schema = read('products-schema.json') failed</div>
+<div>string json = read('products.json') skipped</div>
+<div>def SchemaUtils = Java.type('com.intuit.karate.demo.util.SchemaUtils') skipped</div>
+<div>assert SchemaUtils.isValid(json, schema) skipped</div>
+</div>
+</div>
+<div>
+<div>using karate's simpler alternative to json-schema</div>
+<div>
+<div>def warehouseLocation = { latitude: '#number', longitude: '#number' } passed</div>
+<div>def productStructure = passed</div>
+<div>def json = read('products.json') failed</div>
+<div>match json == '#[] productStructure' skipped</div>
+</div>
+</div>
+</body>
+</html>

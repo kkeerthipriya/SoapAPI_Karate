@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/callonce/call-once.feature</title>
+</head>
+<body>
+<div>
+<div>various tests on the cats created (1)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>table kittens passed</div>
+<div>def result = callonce read('../callarray/kitten-create.feature') kittens failed</div>
+<div>path 'cats' skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>match response[*].name contains 'Bob' skipped</div>
+</div>
+</div>
+<div>
+<div>various tests on the cats created (2)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>table kittens passed</div>
+<div>def result = callonce read('../callarray/kitten-create.feature') kittens failed</div>
+<div>path 'cats' skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>match response[*].name contains 'Nyan' skipped</div>
+</div>
+</div>
+<div>
+<div>create a cat with kittens</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>table kittens passed</div>
+<div>def result = callonce read('../callarray/kitten-create.feature') kittens failed</div>
+<div>def created = $result[*].response skipped</div>
+<div>path 'cats' skipped</div>
+<div>request { name: 'Billie', kittens: '#(created)' } skipped</div>
+<div>method post skipped</div>
+<div>status 200 skipped</div>
+<div>match response.kittens[*].name contains only ['Bob', 'Wild', 'Nyan'] skipped</div>
+<div>match response.kittens[*].name contains only $kittens[*].name skipped</div>
+</div>
+</div>
+</body>
+</html>

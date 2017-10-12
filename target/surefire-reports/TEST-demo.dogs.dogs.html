@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/dogs/dogs.feature</title>
+</head>
+<body>
+<div>
+<div>create and retrieve a dog</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'dogs' passed</div>
+<div>request { name: 'Scooby' } passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>match response == { id: '#number', name: 'Scooby' } passed</div>
+<div>def id = response.id passed</div>
+<div>path 'dogs', id passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == { id: '#(id)', name: 'Scooby' } passed</div>
+<div>path 'dogs' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response contains { id: '#(id)', name: 'Scooby' } passed</div>
+<div>def config = { username: 'sa', password: '', url: 'jdbc:h2:mem:testdb', driverClassName: 'org.h2.Driver' } passed</div>
+<div>def DbUtils = Java.type('com.intuit.karate.demo.util.DbUtils') passed</div>
+<div>def db = new DbUtils(config) passed</div>
+<div>def dogs = db.readRows('SELECT * FROM DOGS') passed</div>
+<div>match dogs contains { ID: '#(id)', NAME: 'Scooby' } passed</div>
+<div>def dog = db.readRow('SELECT * FROM DOGS D WHERE D.ID = ' + id) passed</div>
+<div>match dog.NAME == 'Scooby' passed</div>
+<div>def test = db.readValue('SELECT ID FROM DOGS D WHERE D.ID = ' + id) passed</div>
+<div>match test == id passed</div>
+</div>
+</div>
+</body>
+</html>

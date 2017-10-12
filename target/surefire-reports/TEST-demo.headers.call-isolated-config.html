@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/headers/call-isolated-config.feature</title>
+</head>
+<body>
+<div>
+<div>fail with a 400 since the header was not set</div>
+<div>
+<div>def setup = callonce read('common.feature') failed</div>
+<div>url demoBaseUrl skipped</div>
+<div>path 'headers', setup.token skipped</div>
+<div>param url = demoBaseUrl skipped</div>
+<div>method get skipped</div>
+<div>status 400 skipped</div>
+</div>
+</div>
+<div>
+<div>fail with a 400 since the cookie was not set</div>
+<div>
+<div>def setup = callonce read('common.feature') failed</div>
+<div>url demoBaseUrl skipped</div>
+<div>configure headers = { Authorization: '#(setup.token + setup.time + demoBaseUrl)' } skipped</div>
+<div>path 'headers', setup.token skipped</div>
+<div>param url = demoBaseUrl skipped</div>
+<div>method get skipped</div>
+<div>status 400 skipped</div>
+</div>
+</div>
+<div>
+<div>manually set header and cookie to pass</div>
+<div>
+<div>def setup = callonce read('common.feature') failed</div>
+<div>url demoBaseUrl skipped</div>
+<div>headers { Authorization: '#(setup.token + setup.time + demoBaseUrl)' } skipped</div>
+<div>cookie time = setup.time skipped</div>
+<div>path 'headers', setup.token skipped</div>
+<div>param url = demoBaseUrl skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+</div>
+</div>
+<div>
+<div>alternative way of setting headers and cookies 1</div>
+<div>
+<div>def setup = callonce read('common.feature') failed</div>
+<div>url demoBaseUrl skipped</div>
+<div>configure headers = { Authorization: '#(setup.token + setup.time + demoBaseUrl)' } skipped</div>
+<div>configure cookies = { time: '#(setup.time)' } skipped</div>
+<div>path 'headers', setup.token skipped</div>
+<div>param url = demoBaseUrl skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+</div>
+</div>
+<div>
+<div>alternative way of setting headers and cookies 2</div>
+<div>
+<div>def setup = callonce read('common.feature') failed</div>
+<div>url demoBaseUrl skipped</div>
+<div>header Authorization = (setup.token + setup.time + demoBaseUrl) skipped</div>
+<div>cookies { time: '#(setup.time)' } skipped</div>
+<div>path 'headers', setup.token skipped</div>
+<div>param url = demoBaseUrl skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/headers/callonce-background-multiscenario.feature</title>
+</head>
+<body>
+<div>
+<div>first scenario</div>
+<div>
+<div>def setup = callonce read('common-noheaders.feature') failed</div>
+<div>def authToken = (setup.token + setup.time) skipped</div>
+<div>header Authorization = authToken + demoBaseUrl skipped</div>
+<div>cookie time = setup.time skipped</div>
+<div>url demoBaseUrl skipped</div>
+<div>path 'headers', setup.token skipped</div>
+<div>param url = demoBaseUrl skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+</div>
+</div>
+<div>
+<div>second scenario</div>
+<div>
+<div>def setup = callonce read('common-noheaders.feature') failed</div>
+<div>def authToken = (setup.token + setup.time) skipped</div>
+<div>header Authorization = authToken + demoBaseUrl skipped</div>
+<div>cookie time = setup.time skipped</div>
+<div>url demoBaseUrl skipped</div>
+<div>path 'headers', setup.token skipped</div>
+<div>param url = demoBaseUrl skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+</div>
+</div>
+</body>
+</html>

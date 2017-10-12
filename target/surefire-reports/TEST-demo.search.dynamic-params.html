@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/search/dynamic-params.feature</title>
+</head>
+<body>
+<div>
+<div>using a function to pre-process the search parameters (1)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: 'foo', country: 'IN', active: 'true', limit: '1' } passed</div>
+<div>def nullify = passed</div>
+<div>def getResponseParam = read('get-response-param.js') failed</div>
+<div>def query = nullify(query) skipped</div>
+<div>print query skipped</div>
+<div>path 'search' skipped</div>
+<div>params query skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>assert getResponseParam('name') == query.name skipped</div>
+<div>assert getResponseParam('country') == query.country skipped</div>
+<div>assert getResponseParam('active') == query.active skipped</div>
+<div>assert getResponseParam('limit') == query.limit skipped</div>
+<div>match response !contains { '': '#notnull' } skipped</div>
+</div>
+</div>
+<div>
+<div>using a function to pre-process the search parameters (2)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: 'bar', country: '', active: '', limit: '5' } passed</div>
+<div>def nullify = passed</div>
+<div>def getResponseParam = read('get-response-param.js') failed</div>
+<div>def query = nullify(query) skipped</div>
+<div>print query skipped</div>
+<div>path 'search' skipped</div>
+<div>params query skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>assert getResponseParam('name') == query.name skipped</div>
+<div>assert getResponseParam('country') == query.country skipped</div>
+<div>assert getResponseParam('active') == query.active skipped</div>
+<div>assert getResponseParam('limit') == query.limit skipped</div>
+<div>match response !contains { 'country': '#notnull' } skipped</div>
+</div>
+</div>
+<div>
+<div>using a function to pre-process the search parameters (3)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: 'bar', country: 'JP', active: '', limit: '' } passed</div>
+<div>def nullify = passed</div>
+<div>def getResponseParam = read('get-response-param.js') failed</div>
+<div>def query = nullify(query) skipped</div>
+<div>print query skipped</div>
+<div>path 'search' skipped</div>
+<div>params query skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>assert getResponseParam('name') == query.name skipped</div>
+<div>assert getResponseParam('country') == query.country skipped</div>
+<div>assert getResponseParam('active') == query.active skipped</div>
+<div>assert getResponseParam('limit') == query.limit skipped</div>
+<div>match response !contains { 'active': '#notnull' } skipped</div>
+</div>
+</div>
+<div>
+<div>using a function to pre-process the search parameters (4)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: '', country: 'US', active: '', limit: '3' } passed</div>
+<div>def nullify = passed</div>
+<div>def getResponseParam = read('get-response-param.js') failed</div>
+<div>def query = nullify(query) skipped</div>
+<div>print query skipped</div>
+<div>path 'search' skipped</div>
+<div>params query skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>assert getResponseParam('name') == query.name skipped</div>
+<div>assert getResponseParam('country') == query.country skipped</div>
+<div>assert getResponseParam('active') == query.active skipped</div>
+<div>assert getResponseParam('limit') == query.limit skipped</div>
+<div>match response !contains { 'name': '#notnull' } skipped</div>
+</div>
+</div>
+<div>
+<div>using a function to pre-process the search parameters (5)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: '', country: '', active: 'false', limit: '' } passed</div>
+<div>def nullify = passed</div>
+<div>def getResponseParam = read('get-response-param.js') failed</div>
+<div>def query = nullify(query) skipped</div>
+<div>print query skipped</div>
+<div>path 'search' skipped</div>
+<div>params query skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>assert getResponseParam('name') == query.name skipped</div>
+<div>assert getResponseParam('country') == query.country skipped</div>
+<div>assert getResponseParam('active') == query.active skipped</div>
+<div>assert getResponseParam('limit') == query.limit skipped</div>
+<div>match response !contains { 'limit': '#notnull' } skipped</div>
+</div>
+</div>
+<div>
+<div>here the parameters are set to null in the data table itself (1)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: 'foo', country: 'IN', active: true, limit: 1 } passed</div>
+<div>print query passed</div>
+<div>path 'search' passed</div>
+<div>params query passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response !contains { dummy: '#notnull' } passed</div>
+</div>
+</div>
+<div>
+<div>here the parameters are set to null in the data table itself (2)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: 'bar', country: null, active: null, limit: 5 } passed</div>
+<div>print query passed</div>
+<div>path 'search' passed</div>
+<div>params query passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response !contains { country: '#notnull' } passed</div>
+</div>
+</div>
+<div>
+<div>here the parameters are set to null in the data table itself (3)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: 'bar', country: 'JP', active: null, limit: null } passed</div>
+<div>print query passed</div>
+<div>path 'search' passed</div>
+<div>params query passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response !contains { active: '#notnull' } passed</div>
+</div>
+</div>
+<div>
+<div>here the parameters are set to null in the data table itself (4)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: null, country: 'US', active: null, limit: 3 } passed</div>
+<div>print query passed</div>
+<div>path 'search' passed</div>
+<div>params query passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response !contains { name: '#notnull' } passed</div>
+</div>
+</div>
+<div>
+<div>here the parameters are set to null in the data table itself (5)</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def query = { name: null, country: null, active: false, limit: null } passed</div>
+<div>print query passed</div>
+<div>path 'search' passed</div>
+<div>params query passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response !contains { limit: '#notnull' } passed</div>
+</div>
+</div>
+<div>
+<div>using a data-driven called feature instead of a scenario outline</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>table data passed</div>
+<div>def result = call read('search-complex.feature') data failed</div>
+</div>
+</div>
+<div>
+<div>params json with embedded expressions</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def data = { one: 'one', two: 'two' } passed</div>
+<div>path 'search' passed</div>
+<div>params ({ name: data.one, country: data.two }) passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == { name: ['one'], country: ['two'] } passed</div>
+</div>
+</div>
+<div>
+<div>using the set keyword to build json and nulls are skipped by default</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>set data passed</div>
+<div>table search passed</div>
+<div>def result = call read('search-simple.feature') search failed</div>
+</div>
+</div>
+<div>
+<div>test that multi-params work as expected</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'search' passed</div>
+<div>param foo = 'bar', 'baz' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == { foo: ['bar', 'baz'] } passed</div>
+<div>path 'search' passed</div>
+<div>params { foo: ['bar', 'baz'] } passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == { foo: ['bar', 'baz'] } passed</div>
+<div>path 'search' passed</div>
+<div>param foo = 'bar,baz' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == { foo: ['bar,baz'] } passed</div>
+<div>path 'search' passed</div>
+<div>params { foo: 'bar,baz' } passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == { foo: ['bar,baz'] } passed</div>
+</div>
+</div>
+</body>
+</html>

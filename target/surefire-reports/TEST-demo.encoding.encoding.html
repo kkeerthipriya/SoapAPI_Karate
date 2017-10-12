@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/encoding/encoding.feature</title>
+</head>
+<body>
+<div>
+<div>special characters in the url</div>
+<div>
+<div>url demoBaseUrl + '/encoding/�Ill~Formed@RequiredString!' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == '�Ill~Formed@RequiredString!' passed</div>
+</div>
+</div>
+<div>
+<div>special characters in the path</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'encoding', '�Ill~Formed@RequiredString!' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == '�Ill~Formed@RequiredString!' passed</div>
+</div>
+</div>
+<div>
+<div>question mark in the url</div>
+<div>
+<div>url demoBaseUrl + '/encoding/index.php%3F/api/v2' passed</div>
+<div>path 'hello' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == 'hello' passed</div>
+</div>
+</div>
+</body>
+</html>

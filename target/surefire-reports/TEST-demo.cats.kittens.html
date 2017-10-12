@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/cats/kittens.feature</title>
+</head>
+<body>
+<div>
+<div>create cat with kittens</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'cats' passed</div>
+<div>request { name: 'Bob' } passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>def bob = response passed</div>
+<div>path 'cats' passed</div>
+<div>request { name: 'Wild' } passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>def wild = response passed</div>
+<div>path 'cats' passed</div>
+<div>request ({ name: 'Billie', kittens: [bob, wild] }) passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>match response == read('billie-expected.json') failed</div>
+<div>def billie = response skipped</div>
+<div>path 'cats', billie.id, 'kittens' skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>match each response == { id: '#number', name: '#string' } skipped</div>
+<div>match response contains { id: '#(wild.id)', name: 'Wild' } skipped</div>
+</div>
+</div>
+</body>
+</html>

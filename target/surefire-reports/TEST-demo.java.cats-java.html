@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/java/cats-java.feature</title>
+</head>
+<body>
+<div>
+<div>pass json to java</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>def JavaDemo = Java.type('com.intuit.karate.demo.util.JavaDemo') passed</div>
+<div>path 'cats' passed</div>
+<div>request { name: 'Sillie' } passed</div>
+<div>method post passed</div>
+<div>status 200 passed</div>
+<div>def name = JavaDemo.getName(response) passed</div>
+<div>assert name == 'Sillie' passed</div>
+<div>path 'cats' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>def names = JavaDemo.getNames(response) passed</div>
+<div>match names contains ['Sillie'] passed</div>
+</div>
+</div>
+</body>
+</html>

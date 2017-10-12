@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/upload/upload.feature</title>
+</head>
+<body>
+<div>
+<div>upload file</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'files' passed</div>
+<div>multipart field myFile = read('test.pdf') failed</div>
+<div>multipart field message = 'hello world' skipped</div>
+<div>method post skipped</div>
+<div>status 200 skipped</div>
+<div>match response == { id: '#uuid', filename: 'myFile', message: 'hello world', contentType: 'application/octet-stream' } skipped</div>
+<div>def id = response.id skipped</div>
+<div>path 'files', id skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>match response == read('test.pdf') skipped</div>
+<div>match header Content-Disposition contains 'attachment' skipped</div>
+<div>match header Content-Disposition contains 'myFile' skipped</div>
+<div>match header Content-Type == 'application/octet-stream' skipped</div>
+<div>def FileChecker = Java.type('com.intuit.karate.demo.util.FileChecker') skipped</div>
+<div>json fileInfo = FileChecker.getMetadata(id) skipped</div>
+<div>match fileInfo == { id: '#(id)', filename: 'myFile', message: 'hello world', contentType: 'application/octet-stream' } skipped</div>
+</div>
+</div>
+<div>
+<div>upload with filename and content-type specified</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'files' passed</div>
+<div>multipart file myFile = { read: 'test.pdf', filename: 'upload-name.pdf', contentType: 'application/pdf' } failed</div>
+<div>multipart field message = 'hello world' skipped</div>
+<div>method post skipped</div>
+<div>status 200 skipped</div>
+<div>match response == { id: '#uuid', filename: 'upload-name.pdf', message: 'hello world', contentType: 'application/pdf' } skipped</div>
+<div>def id = response.id skipped</div>
+<div>path 'files', id skipped</div>
+<div>method get skipped</div>
+<div>status 200 skipped</div>
+<div>match response == read('test.pdf') skipped</div>
+<div>match header Content-Disposition contains 'attachment' skipped</div>
+<div>match header Content-Disposition contains 'upload-name.pdf' skipped</div>
+<div>match header Content-Type == 'application/pdf' skipped</div>
+</div>
+</div>
+<div>
+<div>upload multipart/mixed</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>path 'files', 'mixed' passed</div>
+<div>multipart field myJson = { text: 'hello world' } passed</div>
+<div>multipart file myFile = { read: 'test.pdf', filename: 'upload-name.pdf', contentType: 'application/pdf' } failed</div>
+<div>header Content-Type = 'multipart/mixed' skipped</div>
+<div>method post skipped</div>
+<div>status 200 skipped</div>
+<div>match response == { id: '#uuid', filename: 'upload-name.pdf', message: 'hello world', contentType: 'application/pdf' } skipped</div>
+</div>
+</div>
+</body>
+</html>

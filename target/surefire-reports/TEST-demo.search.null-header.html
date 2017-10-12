@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/search/null-header.feature</title>
+</head>
+<body>
+<div>
+<div>1</div>
+<div>
+<div>def blah = null passed</div>
+<div>url demoBaseUrl passed</div>
+<div>path 'search', 'headers' passed</div>
+<div>headers { foo: 'bar', blah: '#(blah)' } passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response contains { foo: ['bar'] } passed</div>
+<div>match response !contains { blah: '#notnull' } passed</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/loopcall/alt-loop.feature</title>
+</head>
+<body>
+<div>
+<div>1 (1)</div>
+<div>
+<div>def cat = { name: 'Tom' } passed</div>
+<div>def type = 'json' passed</div>
+<div>def file = 'create-' + type + '.feature' passed</div>
+<div>def res1 = call read(file) cat failed</div>
+<div>def res2 = call read('result.feature') { id: '#(res1.id)' } skipped</div>
+<div>def response = res2.response skipped</div>
+<div>match response == { id: '#(~~res1.id)' , name: 'Tom' } skipped</div>
+</div>
+</div>
+<div>
+<div>2 (2)</div>
+<div>
+<div>def cat = { name: 'Tom' } passed</div>
+<div>def type = 'xml' passed</div>
+<div>def file = 'create-' + type + '.feature' passed</div>
+<div>def res1 = call read(file) cat failed</div>
+<div>def res2 = call read('result.feature') { id: '#(res1.id)' } skipped</div>
+<div>def response = res2.response skipped</div>
+<div>match response == { id: '#(~~res1.id)' , name: 'Tom' } skipped</div>
+</div>
+</div>
+</body>
+</html>

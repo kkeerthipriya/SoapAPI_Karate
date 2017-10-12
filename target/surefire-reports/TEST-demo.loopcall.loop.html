@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/loopcall/loop.feature</title>
+</head>
+<body>
+<div>
+<div>main loop</div>
+<div>
+<div>def types = ['json', 'xml']; passed</div>
+<div>def cat = { name: 'Tom' } passed</div>
+<div>def fun = read('loop.js') failed</div>
+<div>def response = fun(types, cat) skipped</div>
+<div>assert response.length == 2 skipped</div>
+<div>match each response == { id: '#number', name: 'Tom' } skipped</div>
+<div>match each response contains cat skipped</div>
+<div>match response == '#[2] ^cat' skipped</div>
+</div>
+</div>
+</body>
+</html>

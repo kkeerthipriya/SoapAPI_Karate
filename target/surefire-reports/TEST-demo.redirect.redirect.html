@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo/redirect/redirect.feature</title>
+</head>
+<body>
+<div>
+<div>check if the call redirects to greeting</div>
+<div>
+<div>url demoBaseUrl passed</div>
+<div>configure followRedirects = false passed</div>
+<div>path 'redirect' passed</div>
+<div>method get passed</div>
+<div>status 302 passed</div>
+<div>match header Location == demoBaseUrl + '/search' passed</div>
+<div>def location = responseHeaders['Location'][0] passed</div>
+<div>url location passed</div>
+<div>param foo = 'bar' passed</div>
+<div>method get passed</div>
+<div>status 200 passed</div>
+<div>match response == { foo: ['bar'] } passed</div>
+</div>
+</div>
+</body>
+</html>
